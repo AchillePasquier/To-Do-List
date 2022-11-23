@@ -1,0 +1,138 @@
+.body {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background-color: #f2f7fd;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  color: #5c47d3;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo-list {
+  margin-left: 30px;
+  margin-right: 20px;
+  color: #5c47d3;
+  font-size: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 150px);
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  list-style-type: none;
+  margin-bottom: 30px;
+  max-height: 60%;
+  overflow: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.tasks::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.tasks {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.task p:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.checkbox:hover {
+  cursor: pointer;
+}
+
+.done {
+  opacity: 0.3;
+}
+
+.delete-icon {
+  transition: 0.8s;
+}
+
+.delete-icon:hover {
+  color: red;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
+form > input {
+  flex: 4;
+  font-size: 18px;
+  border: 1px solid #5c47d3;
+  vertical-align: middle;
+  outline: none;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #f2f7fd;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+form > input:last-child {
+  flex: 1;
+  color: white;
+  background-color: #5c47d3;
+  font-size: 16px;
+  margin-left: 30px;
+  width: 80px;
+  transition: 0.8s;
+}
+
+form > input:last-child:hover {
+  cursor: pointer;
+  border: 1px solid #5c47d3;
+  background-color: white;
+  color: #5c47d3;
+}
+
+footer {
+  background-color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+}
+
+footer a {
+  font-weight: bold;
+  color: gray;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #5c47d3;
+}
